@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b;
+    padding: 15px 50px;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+.long-content {
+     height: 2000px; 
+     background-color: #f0f0f0;
+    padding: 50px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("images/eceng gondok.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(190, 190, 153, 0.7);
+    z-index: 0;
+}
+
+.hero h1 {
+    color: rgb(231, 125, 125);
+    font-size: 36px;
+    z-index: 1;
+}
+
+.overlay {
+    background-color: rgb(23,9,9,0.7); 
+    padding: 20px 40px;
+    border-radius: 10px; 
+    position: relative;
+    z-index: 1;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+.anggota {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:  #f3e5f5;
+}
+
+.anggota h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.anggota-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.anggota-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anggota-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #00796b;
+    object-fit: cover;
+}
+
+.anggota-card p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00796b;
+}
+
+.produk {
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.produk h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #060505;
+}
+
+.produk-deskripsi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.deskripsi-teks {
+    flex: 1;
+    max-width: 500px;
+    font-size: 18px;
+    color: #060505;
+}
+
+.deskripsi-teks p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+
+.deskripsi-gambar img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bahan-alat {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.bahan, .alat {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.bahan h3, .alat h3 {
+    font-size: 24px;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.bahan ul, .alat ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+.proses {
+    padding: 60px 20px;
+    background: linear-gradient(to right,  #fff3e0 ); 
+    text-align: center;
+}
+
+.proses h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #00695c;
+}
+
+.proses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.fase {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    max-width: 400px;
+    text-align: left;
+}
+
+.fase h3 {
+    color:  #00796b;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.fase ol {
+    padding-left: 20px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.keunggulan {
+  padding: 60px 20px;
+  background: #d0f0c0; /* hijau pastel natural */
+  text-align: center;
+}
+
+.keunggulan h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #3f3f3f;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  max-width: 400px;
+  text-align: left;
+}
+
+.box h3 {
+  color: #00695c;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.box ul {
+  padding-left: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Bagian Dokumentasi */
+#dokumentasi {
+  background-color: #F4E7E1;
+  padding: 50px 20px;
+}
+
+#dokumentasi h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #4B3F35; 
+}
+
+.foto-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.foto-container img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.foto-container img:hover {
+  transform: scale(1.05);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+video {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer-container */
+footer {
+    background-color: #00796b;
+    color: rgb(226, 235, 226);
+    padding: 40px 50px; 
+    font-size: 0.9em;
+    line-height: 1.6;
+    text-align: center;
+}
